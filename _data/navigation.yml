@@ -3,20 +3,23 @@ main:
   - title: "About Me"
     url: "/#about-me"
 
-  - title: "News"
-    url: "/#-news"
+  - title: "CV"
+    url: https://yuchy-zhao.github.io/files/Resume.pdf
 
-  - title: "Publications"
-    url: "/#-publications"
+  # - title: "News"
+  #   url: "/#-news"
 
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
+  # - title: "Educations"
+  #   url: "/#-educations"
 
-  - title: "Educations"
-    url: "/#-educations"
+  # - title: "Publications"
+  #   url: "/#-publications"
 
-  - title: "Invited Talks"
-    url: "/#-invited-talks"
+  # - title: "Honors and Awards"
+  #   url: "/#-honors-and-awards"
 
-  - title: "Internships"
-    url: "/#-internships"
+  # - title: "Research Experiences"
+  #   url: "/#-research-experiences"
+
+
+

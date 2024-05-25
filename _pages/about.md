@@ -17,42 +17,81 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+I'm a 2nd-year M.Phil. student in Electronic and Information Engineering at SIGS, Tsinghua University(THU), supervised by [Prof. Lu Fang](http://www.luvision.net/) and [Prof. Ruiqi Huang](https://rqhuang88.github.io/). Prior to that, I spent wonderful 4 years at Southeast University(SEU), advised by [Prof. Yangang Wang](https://www.yangangwang.com/) and obtained my bachelor's degree in 2022.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+**My research interests mainly lie in 2D and 3D computer vision**, especially in:
+* Visual Cognition: Multi-object Tracking and Pedstrian Trajectory Prediction in Gigapixel Complex Scenes.
+* 3D Reconstruction: Understanding, Interaction and Active Reconstruction of Indoor Scenes.
+
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+<span class='anchor' id='news'></span>
 
-# 📝 Publications 
+- *2024.03*: &nbsp;🎉🎉 Our paper **DynamicTrack** is accepted by **ICME 2024** and scheduled for **Oral** presentation! 
+- *2024.02*: &nbsp;🎉🎉 Our paper **GigaTraj** is accepted by **CVPR 2024**!
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
-
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
-
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+<span class='anchor' id='educations'></span>
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+- *2022.08 - 2025.06*, M.Sc. in Electronic Information Engineering, Tsinghua University (THU), Beijing, China. 
+- *2018.08 - 2022.06*, B.Sc. in Automation, Southeast University (SEU), Nanjing, China.
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+
+# 📝 Publications 
+<span class='anchor' id='publications'></span>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='images/dynamictrack.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+<b>DynamicTrack: Advancing Gigapixel Tracking in Crowded Scenes</b>
+<p><b>Yunqi Zhao</b>, Yuchen Guo, Zheng Cao, Kai Ni, Ruqi Huang, Fu Fang<sup>&dagger;</sup></p>
+<p><i>The IEEE International Conference on Multimedia & Expo (<b>ICME</b>), 2024.</i></p>
+[paper](https://yuchy-zhao.github.io/files/DynamicTrack.pdf)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024</div><img src='images/gigatraj.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+<b>DynamicTrack: Advancing Gigapixel Tracking in Crowded Scenes</b>
+<p>Haozhe Lin<sup>&#42;</sup>, Chunyu Wei<sup>&#42;</sup>, Li he<sup>&#42;</sup>, Yuchen Guo<sup>&#42;</sup>, <b>Yunqi Zhao</b>, Shanglong Li, Fu Fang<sup>&dagger;</sup></p>
+<p><i>Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024.</i></p>
+[paper](https://yuchy-zhao.github.io/files/GigaTraj.pdf)
+</div>
+</div>
+
+
+
+
+
+
+
+# 🎖 Honors and Awards
+<span class='anchor' id='honors-and-awards'></span>
+
+* *2022*, Excellent Graduate, Southeast University.
+* *2021*, Outstanding students, Southeast University.
+* *2019, 2020*, National Encouragement Scholarship, the Minister of Education, China.
+
+
+# 🖥️ Research Experiences
+<span class='anchor' id='research-experiences'></span>
+
+* **Pedestrian Trajectory Prediction in Gigapixel Complex Scenes**
+*2023.07 – 2024.11*   
+Propose a trajectory prediction dataset of hundreds of people in gigapixel complex scenes.   
+Design a trajectory complexity metric and conduct statistical and comparative analysis.   
+Mentor: [Prof. Lu Fang](http://www.luvision.net/)
+
+* **Multi-object Tracking in Gigapixel Complex Scenes**
+*2022.09 – 2023.06*    
+Propose a contrastive learning-based detector for simultaneous head and body detection.    
+Design a hierarchical association algorithm to utilize head and body cues for multi-object tracking.   
+Mentor: [Prof. Lu Fang](http://www.luvision.net/) and [Prof. Ruqi Huang](https://rqhuang88.github.io/)
+
+* **Scene Reconstruction and Understanding for Intelligent Interaction (B.S. Thesis)**
+*2021.11 – 2022.08*    
+Propose a real-time system for indoor scene reconstruction, segmentation, and simplification.   
+Design local and global interaction patterns to enhance  3D perception of the visually impaired people.   
+Mentor: [Prof. Lu Fang](http://www.luvision.net/) and [Prof. Yangang Wang](https://www.yangangwang.com/)    
+
