@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="DynamicTrack: Advancing Gigapixel Tracking in Crowded Scenes">
+    <meta name="author" content="Yunqi Zhao,
+                                Yuchen Guo,
+                                Zheng Cao,
+                                Kai Ni,
+								Ruqi Huang,
+                                Lu Fang">
+
+    <title>DynamicTrack: Advancing Gigapixel Tracking in Crowded Scenes</title>
+    <!-- Bootstrap core CSS -->
+    <!--link href="bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+    <!--    <link rel="icon" href="img/favicon.gif" type="image/gif">-->
+</head>
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+    <h2>DynamicTrack: Advancing Gigapixel Tracking in Crowded Scenes</h2>
+    <h3>ICME 2024 (Oral)</h3>
+<!--            <p class="abstract">An interpretable, data-efficient, and scalable neural scene representation.</p>-->
+    <hr>
+    <p class="authors">
+        <a href="https://yuchy-zhao.github.io/"> Yunqi Zhao*</a>,
+        <a target="_blank"> Yuchen Guo*</a>,
+        <a target="_blank"> Zheng Cao</a>,
+        <a target="_blank"> Kai Ni</a>,
+        <a href="https://rqhuang88.github.io/"> Ruqi Huang</a>,
+        <a href="http://www.luvision.net/"> Lu Fang</a>
+    </p>
+    <p class="authors">
+        <a> <b>Tsinghua University</b> </a>
+    </p>       
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="https://yuchy-zhao.github.io/files/DynamicTrack.pdf">Paper</a>
+        <a class="btn btn-primary" href="https://yuchy-zhao.github.io/dynamictrack">Code(Coming Soon)</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <h2>Overview</h2>
+        <p>
+            Tracking in gigapixel scenarios holds numerous potential applications
+            in video surveillance and pedestrian analysis. 
+            Existing algorithms attempt to perform tracking in crowded scenes
+            by utilizing multiple cameras or group relationships. 
+            However, their performance significantly degrades 
+            when confronted with complex interaction and occlusion inherent in gigapixel images.
+            In this paper, we introduce DynamicTrack, a dynamic tracking framework 
+            designed to address gigapixel tracking challenges in crowded scenes.
+            In particular, we propose a dynamic detector that 
+            utilizes contrastive learning to jointly detect the head and body of pedestrians.
+            Building upon this, we design a dynamic association algorithm
+            that effectively utilizes head and body information for matching purposes. 
+            Extensive experiments show that our tracker achieves state-of-the-art performance
+            on widely used tracking benchmarks specifically designed for gigapixel crowded scenes.
+        </p>
+        <img src='img/teaser.png' title="teaser" class="center" width="100%">
+    </div>
+    
+
+    <div class="section">
+        <h2>Framework</h2>
+        <hr>
+        <p>
+            We propose a framework of dynamic tracking with head and body features. 
+            (a) Dynamic detection: Contrastive learning-based detector achieves 
+            simultaneous detection of both the body and the head for pedestrian tracking.
+            (b) Dynamic association: Dynamically utilizing head and body of the same identity 
+            for matching to achieve robust tracking in crowded scenes.
+        </p>
+        <img src='img/pipeline.jpg' title="framework" class="center" width="100%">
+    </div>
+
+    <div class="section">
+        <h2>Results</h2>
+        <hr>
+        <p>
+            We have selected gigapixel sequences from the test set of PANDA 
+            to demonstrate the effectiveness of DynamicTrack in handling complex crowded scenarios.
+        </p>
+        <img src='img/results.jpg' title="results" class="center" width="100%">
+
+    </div>
+
+    <div class="section">
+        <h2>Conclusion</h2>
+        <hr>
+        <p>
+            In this paper, we address the challenging task of gigapixel tracking 
+            in crowded scenes by introducing DynamicTrack. 
+            To enhance the robustness to occlusion, 
+            we incorporate head information in addition to the traditional body-based features
+            and leverage contrastive learning for dynamic detection. 
+            Moreover, we propose dynamic association algorithms for body-head tracking 
+            to overcome the challenges posed by gigapixel crowded sequences. 
+            Experimental results on benchmark MOT20 and PANDA have shown that
+            our approach outperforms the state-of-the-art trackers in crowded scenes. 
+            The future plan is to integrate the dynamic detection framework 
+            into the latest transformer-based detectors to further enhance the tracking performance in crowded scenes.
+        </p>
+    </div>
+
+    <hr>
+    <footer>
+        <p>Feel free to send any feedback and questions to <a href="https://yuchy-zhao.github.io/">Yunqi Zhao</a></p>
+    </footer>
+    <footer>
+        <p><small>The website template was borrowed from <a href="https://vsitzmann.github.io/siren/">SIREN</a></small></p>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

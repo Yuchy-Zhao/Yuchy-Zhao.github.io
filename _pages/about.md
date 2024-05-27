@@ -25,11 +25,14 @@ I'm a 2nd-year M.Phil. student in Electronic and Information Engineering at SIGS
 
 
 
+
 # 🔥 News
 <span class='anchor' id='news'></span>
 
 - *2024.03*: &nbsp;🎉🎉 Our paper **DynamicTrack** is accepted by **ICME 2024** and scheduled for **Oral** presentation! 
 - *2024.02*: &nbsp;🎉🎉 Our paper **GigaTraj** is accepted by **CVPR 2024**!
+
+
 
 
 # 📖 Educations
@@ -39,29 +42,28 @@ I'm a 2nd-year M.Phil. student in Electronic and Information Engineering at SIGS
 - *2018.08 - 2022.06*, B.Sc. in Automation, Southeast University (SEU), Nanjing, China.
 
 
+
+
 # 📝 Publications 
 <span class='anchor' id='publications'></span>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='images/dynamictrack.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 <b>DynamicTrack: Advancing Gigapixel Tracking in Crowded Scenes</b>
-<p><b>Yunqi Zhao</b>, Yuchen Guo, Zheng Cao, Kai Ni, Ruqi Huang, Fu Fang<sup>&dagger;</sup></p>
+<p><b>Yunqi Zhao</b><sup>&#42;</sup>, Yuchen Guo<sup>&#42;</sup>, Zheng Cao, Kai Ni, Ruqi Huang, Fu Fang<sup>&dagger;</sup></p>
 <p><i>The IEEE International Conference on Multimedia & Expo (<b>ICME</b>), 2024.</i></p>
-[paper](https://yuchy-zhao.github.io/files/DynamicTrack.pdf)
+[Paper](https://yuchy-zhao.github.io/files/DynamicTrack.pdf) [Project Page](https://yuchy-zhao.github.io/dynamictrack)
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024</div><img src='images/gigatraj.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-<b>DynamicTrack: Advancing Gigapixel Tracking in Crowded Scenes</b>
+<b>GigaTraj: Predicting Long-term Trajectories of Hundreds of Pedestrians in Gigapixel Complex Scenes</b>
 <p>Haozhe Lin<sup>&#42;</sup>, Chunyu Wei<sup>&#42;</sup>, Li he<sup>&#42;</sup>, Yuchen Guo<sup>&#42;</sup>, <b>Yunqi Zhao</b>, Shanglong Li, Fu Fang<sup>&dagger;</sup></p>
 <p><i>Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024.</i></p>
-[paper](https://yuchy-zhao.github.io/files/GigaTraj.pdf)
+[Paper](https://yuchy-zhao.github.io/files/GigaTraj.pdf) 
 </div>
 </div>
-
-
-
 
 
 
@@ -72,6 +74,8 @@ I'm a 2nd-year M.Phil. student in Electronic and Information Engineering at SIGS
 * *2022*, Excellent Graduate, Southeast University.
 * *2021*, Outstanding students, Southeast University.
 * *2019, 2020*, National Encouragement Scholarship, the Minister of Education, China.
+
+
 
 
 # 🖥️ Research Experiences
