@@ -61,7 +61,7 @@ I'm a 2nd-year M.Phil. student in Electronic and Information Engineering at SIGS
 <b>GigaTraj: Predicting Long-term Trajectories of Hundreds of Pedestrians in Gigapixel Complex Scenes</b>
 <p>Haozhe Lin<sup>&#42;</sup>, Chunyu Wei<sup>&#42;</sup>, Li he<sup>&#42;</sup>, Yuchen Guo<sup>&#42;</sup>, <b>Yunqi Zhao</b>, Shanglong Li, Fu Fang<sup>&dagger;</sup></p>
 <p><i>Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024.</i></p>
-[Paper](https://yuchy-zhao.github.io/files/GigaTraj.pdf) 
+[Paper](https://yuchy-zhao.github.io/files/GigaTraj.pdf) / [Dataset](https://gigavision.cn/)
 </div>
 </div>
 
