@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Scene Reconstruction and Understanding for Intelligent Interaction">
+    <meta name="author" content="Yunqi Zhao,
+                                Yangang Wang,
+                                Lu Fang">
+
+    <title>Scene Reconstruction and Understanding for Intelligent Interaction</title>
+    <!-- Bootstrap core CSS -->
+    <!--link href="bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+    <h2>Scene Reconstruction and Understanding for Intelligent Interaction</h2>
+    <h3>B.S. Thesis</h3>
+</div>
+
+<div class="container">
+    <div class="section">
+        <h2>Overview</h2>
+        <hr>
+        <p>
+            Due to the lack of visual information, visually impaired individuals 
+            have significantly reduced ability to perceive three-dimensional scenes.
+            In this project, we utilize 3D reconstruction and understanding technology 
+            to help visually impaired individuals efficiently perceive unknown scenes.
+            The overall system structure is as follows, 
+            comprising a server for scene perception and a client for interaction with the visually impaired.
+            <img src='img/pipeline_overall.png' title="pipeline_overall" class="center" width="100%">
+        </p>
+    </div>
+    
+    <!-- <div class="section">
+        <h2>System Demo</h2>
+        <hr>
+        <div class="row justify-content-left">
+            <div class="col-sm-6">
+                <h5 style="text-align: center;">Geometry</h5>
+                <img src='img/video1.gif' class='img-fluid'>
+            </div>
+            <div class="col-sm-6">
+                <h5 style="text-align: center;">Texture</h5>
+                <img src='img/video2.gif' class='img-fluid'>
+            </div>
+            <div class="col-sm-6">
+                <h5 style="text-align: center;">Semantic</h5>
+                <img src='img/video3.gif' class='img-fluid'>
+            </div>
+            <div class="col-sm-6">
+                <h5 style="text-align: center;">Instance</h5>
+                <img src='img/video4.gif' class='img-fluid'>
+            </div>
+            <div class="col-sm-6">
+                <h5 style="text-align: center;">Local Interaction</h5>
+                <img src='img/video5.gif' class='img-fluid'>
+            </div>
+            <div class="col-sm-6">
+                <h5 style="text-align: center;">Global Interaction</h5>
+                <img src='img/video6.gif' class='img-fluid'>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="section">
+        <h2>Indoor 3D Reconstruction</h2>
+        <hr>
+        <p>
+            Scene 3D reconstruction is the foundational module of the system. 
+            We utilize FlashFusion[1] to achieve real-time 3D reconstruction of scenes.
+            The overall structure of the reconstruction system is as follows.
+            <img src='img/pipeline_reconstruction.png' title="pipeline_reconstruction" class="center" width="100%">
+        </p>
+        <p>
+            We selected a real office for testing, and the results are as follows:
+            <!-- <img src='img/result_reconstruction.png' title="result_reconstruction" class="center" width="100%"> -->
+            <div class="row justify-content-left">
+                <div class="col-sm-6">
+                    <h5 style="text-align: center;">Geometry</h5>
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                        <source src="img/video1.mp4" type="video/mp4">
+                    </video>                </div>
+                <div class="col-sm-6">
+                    <h5 style="text-align: center;">Texture</h5>
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                        <source src="img/video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>       
+        </p>
+  
+    </div>
+
+    <div class="section">
+        <h2>Indoor 3D Segmentation</h2>
+        <hr>
+        <p>
+            Scene 3D segmentation is crucial for the system's perception. 
+            We use Ins-Conv[2] to achieve real-time, accurate 3D segmentation of scenes. 
+            The overall structure of the algorithm is as follows.
+            <img src='img/pipeline_segmentation.png' title="pipeline_segmentation" class="center" width="100%">
+        </p>
+        <p>
+            We selected a real office for testing, and the results are as follows:
+            <!-- <img src='img/result_segmentation.png' title="result_segmentation" class="center" width="100%"> -->
+            <div class="row justify-content-left">
+                <div class="col-sm-6">
+                    <h5 style="text-align: center;">Semantic Segmentation</h5>
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                        <source src="img/video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-sm-6">
+                    <h5 style="text-align: center;">Instance Segmentation</h5>
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                        <source src="img/video4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Indoor Scene Analysis</h2>
+        <hr>
+        <p>
+            After completing scene reconstruction and understanding, we need to analyze 
+            the scene to achieve simplification of its content. This includes semantic 
+            bounding box of objects and line detection of walls.
+            <img src='img/pipeline_analysis.png' title="pipeline_analysis" class='center' width="100%">
+        </p>  
+        <p>
+            We selected a real office for testing, and the results are as follows:
+            <img src='img/result_analysis.png' title="result_analysis" class='center' width="100%">
+        </p>       
+    </div>
+    <div class="section">
+        <h2>Interaction Client</h2>
+        <hr>
+        <p>
+            To address the computational bottleneck of terminal interaction devices, 
+            we utilize a remote server for algorithmic perception, and employ a tactile client for scene interaction.
+            We achieve data transmission through a local area network and have defined dedicated scene files for information exchange.
+            <img src='img/pipeline_client.png' title="pipeline_client" class='center' width="100%">
+        </p>     
+        <p>
+            To achieve efficient information interaction, we designed two scene perception modes: 
+            a global mode from a bird's-eye view perspective and a local mode from the user's perspective.
+            <div class="row justify-content-left">
+                <div class="col-sm-6">
+                    <h5 style="text-align: center;">Local Mode</h5>
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                        <source src="img/video5.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-sm-6">
+                    <h5 style="text-align: center;">Global Mode</h5>
+                    <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                        <source src="img/video6.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+    
+        </p>
+    </div>
+
+
+
+    <div class="section">
+        <h2>Reference</h2>
+        <hr>
+        <p>
+            [1] Han, Lei, and Lu Fang. "FlashFusion: Real-time Globally Consistent Dense 3D Reconstruction using CPU Computing." Robotics: Science and Systems. Vol. 1. No. 6. 2018.
+        </p>
+        <p>
+            [2] Liu, Leyao, et al. "Ins-conv: Incremental sparse convolution for online 3d segmentation." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022.
+        </p>
+    </div>
+
+    <hr>
+    <footer>
+        <p>Feel free to send any feedback and questions to <a href="https://yuchy-zhao.github.io/">Yunqi Zhao</a></p>
+    </footer>
+    <footer>
+        <p><small>The website template was borrowed from <a href="https://vsitzmann.github.io/siren/">SIREN</a></small></p>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

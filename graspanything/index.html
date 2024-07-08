@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="GraspAnything: Interactive General Object Grasping">
+    <meta name="author" content="Yunqi Zhao,
+                                Guyue Zhou,
+                                Lu Fang">
+
+    <title>GraspAnything: Interactive General Object Grasping</title>
+    <!-- Bootstrap core CSS -->
+    <!--link href="bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+    <!--    <link rel="icon" href="img/favicon.gif" type="image/gif">-->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            width: 12.5%;
+        }
+        thead th {
+            border-bottom: 2px solid black;
+        }
+        tbody tr:first-child td {
+            border-top: 2px solid black;
+        }
+        tfoot td {
+            border-top: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+    <h2>GraspAnything: Interactive General Object Grasping</h2>
+    <h3>Internship Program</h3>
+</div>
+
+<div class="container">
+    <div class="section">
+        <h2>Overview</h2>
+        <hr>
+        <p>
+            General object grasping is a fundamental problem in robotics and has many applications in industry.
+            In this project, we designed an interactive, general grasping framework. Users can complete the task of grasping objects 
+            with a robotic arm by simply clicking on the target object in the interactive interface.
+            The system pipeline is as follows: interactive segmentation is achieved through the SAM model with the input color and user prompt. 
+            Using the generated mask and the input depth, the 3D point cloud of the target object is obtained.
+            Candidate grippers are then generated using the general grasping network GraspNet, 
+            and finally, the optimal gripper is selected to grasp the target.
+            <img src='img/pipeline.png' title="pipeline" class="center" width="100%">
+        </p>
+        <p>
+            We selected six different objects to verify the effectiveness of the general object grasping. 
+            From top to bottom are the input image, interactive segmentation results, candidate grippers, and the optimal gripper.
+            The results show that the system can accurately segment the target object and generate a reasonable gripper.
+            <div class="row justify-content-left">
+                <div class="col-sm-2">
+                    <img src='img/Object/Object1.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object2.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object3.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object4.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object5.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object6.png' title="teaser" class="center" width="100%">
+                </div>
+            </div>
+            <div class="row justify-content-left">
+                <div class="col-sm-2">
+                    <img src='img/Object/Object1S.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object2S.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object3S.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object4S.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object5S.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object6S.png' title="teaser" class="center" width="100%">
+                </div>
+            </div>
+            <div class="row justify-content-left">
+                <div class="col-sm-2">
+                    <img src='img/Object/Object1GS.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object2GS.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object3GS.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object4GS.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object5GS.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object6GS.png' title="teaser" class="center" width="100%">
+                </div>
+            </div>
+            <div class="row justify-content-left">
+                <div class="col-sm-2">
+                    <img src='img/Object/Object1G.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object2G.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object3G.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object4G.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object5G.png' title="teaser" class="center" width="100%">
+                </div>
+                <div class="col-sm-2">
+                    <img src='img/Object/Object6G.png' title="teaser" class="center" width="100%">
+                </div>
+            </div>
+        </p>
+        
+    </div>
+    
+
+    <div class="section">
+        <h2>Single Object Grasp</h2>
+        <hr>
+        We deployed the system in a real-world setting and tested it with different grasping objects. 
+        The system was able to accurately achieve target grasping in all cases.
+        <div class="row justify-content-left">
+            <div class="col-sm-4">
+                <h5 style="text-align: center;">Object 1</h5>
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="", class="gif">
+                    <source src="img/Object/Object1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align: center;">Object 2</h5>
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                    <source src="img/Object/Object2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align: center;">Object 3</h5>
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                    <source src="img/Object/Object3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align: center;">Object 4</h5>
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                    <source src="img/Object/Object4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align: center;">Object 5</h5>
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                    <source src="img/Object/Object5.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-4">
+                <h5 style="text-align: center;">Object 6</h5>
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                    <source src="img/Object/Object6.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Multi-object Grasp</h2>
+        <hr>
+        We demonstrated tests of continuous grasping of multiple objects. 
+        The system can accurately grasp each target object.
+        <div class="row justify-content-left">
+            <div class="col-sm-6">
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                    <source src="img/Grasp1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-6">
+                <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                    <source src="img/Grasp2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Grasp Accuracy</h2>
+        <hr>
+        <p>
+            We uniformly selected 6 fixed points within the camera’s working range to test the grasping accuracy of different objects. 
+            The test results are shown in the table below, indicating that different objects can be accurately grasped at different points.
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Bowl</th>
+                        <th>Cup</th>
+                        <th>Flower</th>
+                        <th>Cube</th>
+                        <th>Eggplant</th>
+                        <th>Grape</th>
+                        <th>Doll</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Position1</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                    </tr>
+                    <tr>
+                        <td>Position2</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                    </tr>
+                    <tr>
+                        <td>Position3</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                    </tr>
+                    <tr>
+                        <td>Position4</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                    </tr>
+                    <tr>
+                        <td>Position5</td>
+                        <td>&#10003</td>
+                        <td>&#10007</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                    </tr>
+                    <tr>
+                        <td>Position6</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                        <td>&#10003</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="8"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </p>
+
+        <p>
+            Additionally, we conducted quantitative tests on the accuracy of continuous grasping. 
+            For each object, we randomly performed 100 grasps within the camera’s working range.
+            The accuracy are shown in the table below, demonstrating that different objects all achieve very high accuracy.
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Bowl</th>
+                        <th>Cup</th>
+                        <th>Flower</th>
+                        <th>Cube</th>
+                        <th>Eggplant</th>
+                        <th>Grape</th>
+                        <th>Doll</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Accuracy</td>
+                        <td>100%</td>
+                        <td>94%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                        <td>96%</td>
+                        <td>100%</td>
+                        <td>100%</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="8"></td>
+                    </tr>
+                </tfoot>
+            </table>    
+        </p>
+
+    </div>
+
+    <div class="section">
+        <h2>Reference</h2>
+        <hr>
+        <p>
+            [1] Kirillov, Alexander, et al. "Segment anything." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2023.
+        </p>
+        <p>
+            [2] Fang, Hao-Shu, et al. "Graspnet-1billion: A large-scale benchmark for general object grasping." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020.
+        </p>
+    </div>
+
+    <hr>
+    <footer>
+        <p>Feel free to send any feedback and questions to <a href="https://yuchy-zhao.github.io/">Yunqi Zhao</a></p>
+    </footer>
+    <footer>
+        <p><small>The website template was borrowed from <a href="https://vsitzmann.github.io/siren/">SIREN</a></small></p>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
