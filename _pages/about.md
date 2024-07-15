@@ -93,9 +93,17 @@ Propose a contrastive learning-based detector for simultaneous head and body det
 Design a hierarchical association algorithm to utilize head and body cues for multi-object tracking.   
 Mentor: [Prof. Lu Fang](http://www.luvision.net/) and [Prof. Ruqi Huang](https://rqhuang88.github.io/)
 
+# 💡 Personal Projects
+<span class='anchor' id='personal-projects'></span>
+
+* **Interactive General Object Grasping (Internship Program)**
+*2024.04 – 2024.07*    
+Design an interactive general object grasping system for robotics in open world environment.   
+Employ SAM for interactive target localization and GraspNet for general object grasping.    
+Project Page: [GraspAnything](https://yuchy-zhao.github.io/files/graspanything)
+
 * **Scene Reconstruction and Understanding for Intelligent Interaction (B.S. Thesis)**
 *2021.11 – 2022.08*    
 Propose a real-time system for indoor scene reconstruction, segmentation, and simplification.   
 Design local and global interaction patterns to enhance  3D perception of the visually impaired people.   
-Mentor: [Prof. Lu Fang](http://www.luvision.net/) and [Prof. Yangang Wang](https://www.yangangwang.com/)    
-
+Project Page: [AutoExplore](https://yuchy-zhao.github.io/files/autoexplore)
