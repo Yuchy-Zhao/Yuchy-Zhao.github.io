@@ -100,10 +100,10 @@ Mentor: [Prof. Lu Fang](http://www.luvision.net/) and [Prof. Ruqi Huang](https:/
 *2024.04 – 2024.07*    
 Design an interactive general object grasping system for robotics in open world environment.   
 Employ SAM for interactive target localization and GraspNet for general object grasping.    
-Project Page: [GraspAnything](https://yuchy-zhao.github.io/files/graspanything)
+Project Page: [GraspAnything](https://yuchy-zhao.github.io/graspanything)
 
 * **Scene Reconstruction and Understanding for Intelligent Interaction (B.S. Thesis)**
 *2021.11 – 2022.08*    
 Propose a real-time system for indoor scene reconstruction, segmentation, and simplification.   
 Design local and global interaction patterns to enhance  3D perception of the visually impaired people.   
-Project Page: [AutoExplore](https://yuchy-zhao.github.io/files/autoexplore)
+Project Page: [AutoExplore](https://yuchy-zhao.github.io/autoexplore)
