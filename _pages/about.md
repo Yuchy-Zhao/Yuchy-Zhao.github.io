@@ -17,11 +17,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm a 2nd-year M.Phil. student in Electronic and Information Engineering at SIGS, Tsinghua University(THU), supervised by [Prof. Lu Fang](http://www.luvision.net/) and [Prof. Ruiqi Huang](https://rqhuang88.github.io/). Prior to that, I spent wonderful 4 years at Southeast University(SEU), advised by [Prof. Yangang Wang](https://www.yangangwang.com/) and obtained my bachelor's degree in 2022.
+I'm a 3rd-year M.Phil. student in Electronic and Information Engineering at SIGS, Tsinghua University(THU), supervised by [Prof. Lu Fang](http://www.luvision.net/) and [Prof. Ruiqi Huang](https://rqhuang88.github.io/). Prior to that, I spent wonderful 4 years at Southeast University(SEU), advised by [Prof. Yangang Wang](https://www.yangangwang.com/) and obtained my bachelor's degree in 2022.
 
 **My research interests mainly lie in 2D and 3D computer vision**, especially in:
-* Visual Cognition: Multi-object Tracking and Pedstrian Trajectory Prediction in Gigapixel Complex Scenes.
-* 3D Reconstruction: Understanding, Interaction and Active Reconstruction of Indoor Scenes.
+* Visual Cognition: Human-centric Visual Analysis in Complex Scenes with Gigapixel Resolution.   
+* Embodied AI: Perceive, Comprehend, and Interact with the Environment through Physical Entities.   
 
 
 
@@ -65,6 +65,14 @@ I'm a 2nd-year M.Phil. student in Electronic and Information Engineering at SIGS
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIG 2021</div><img src='images/animal3d.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+<b>Occluded Animal Shape and Pose Estimation from a Single Color Image</b>
+<p>Yiming Xie, <b>Yunqi Zhao</b>, Shijian Jiang, Jiangyong Hu, Yangang Wang<sup>&dagger;</sup></p>
+<p><i>International Conference on Image and Graphics, (<b>ICIG</b>), 2021.</i></p>
+</div>
+</div>
+
 
 
 
@@ -83,8 +91,8 @@ I'm a 2nd-year M.Phil. student in Electronic and Information Engineering at SIGS
 
 * **Pedestrian Trajectory Prediction in Gigapixel Complex Scenes**
 *2023.07 – 2024.11*   
-Propose a trajectory prediction dataset of hundreds of people in gigapixel complex scenes.   
-Design a trajectory complexity metric and conduct statistical and comparative analysis.   
+Propose a trajectory prediction dataset featuring hundreds of pedestrians in gigapixel complex scenes.       
+Generate pedestrian trajectories, conduct data annotation, and perform statistical analysis.   
 Mentor: [Prof. Lu Fang](http://www.luvision.net/)
 
 * **Multi-object Tracking in Gigapixel Complex Scenes**
@@ -93,17 +101,25 @@ Propose a contrastive learning-based detector for simultaneous head and body det
 Design a hierarchical association algorithm to utilize head and body cues for multi-object tracking.   
 Mentor: [Prof. Lu Fang](http://www.luvision.net/) and [Prof. Ruqi Huang](https://rqhuang88.github.io/)
 
-# 💡 Personal Projects
+
+
+
+# 💡 Projects
 <span class='anchor' id='personal-projects'></span>
 
 * **Interactive General Object Grasping (Internship Program)**
 *2024.04 – 2024.07*    
-Design an interactive general object grasping system for robotics in open world environment.   
+Develop an interactive general object grasping system for robotic applications in open-world.   
 Employ SAM for interactive target localization and GraspNet for general object grasping.    
 Project Page: [GraspAnything](https://yuchy-zhao.github.io/graspanything)
 
 * **Scene Reconstruction and Understanding for Intelligent Interaction (B.S. Thesis)**
 *2021.11 – 2022.08*    
-Propose a real-time system for indoor scene reconstruction, segmentation, and simplification.   
-Design local and global interaction patterns to enhance  3D perception of the visually impaired people.   
+Design a real-time system for indoor scene reconstruction, segmentation, and simplification.    
+Develop local and global interaction patterns to improve 3D perception for visually impaired people.   
 Project Page: [AutoExplore](https://yuchy-zhao.github.io/autoexplore)
+
+* **3D Reconstruction of Animals from Single Color Images**
+*2020.10 - 2021.05*   
+Employ a parametric model SMAL for 3D reconstruction of animals from a  single color image.      
+Predict the shape and pose parameters using the skeletal and contour information of animals.    
